@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+   background-color: rgba(0,0,0,0,4);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 55px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.menu{
+    width: 100px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    padding-left: 20px;
+    margin-left: 100px;
+    margin-top: 27px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+   
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+
+
+.content .par{
+   
+    padding-left: 60px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.6px;
+    line-height: 30px;
+    color:#fff;
+    font-weight: bold;
+}
+.content h1{
+    padding-top: 150px;
+    color:white;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    padding-left: 50px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+} 
+.content .cn{
+  
+    width: 200px;
+    height: 80px;
+    background: #ff7200;
+    border: black;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 26px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.cn a{
+    text-decoration: none;
+  color: black;
+}
+.cn:hover{
+    background-color: #fff;
+}
+@media screen and (max-width:1200px) {
+    /*Normal Screen*/
+    .main{
+        width: 100%;
+       background-color: rgba(0,0,0,0,4);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+    }
+    ul{
+        margin-left: 30px;
+    }   
+    ul li{
+        margin-left: 40px;
+    }
+    ul li a{
+       font-size: 2.5vw; 
+    }
+    
+    .cn{
+        height:40px;
+        width: 80px;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1, .content span{
+        font-size: 3vw; 
+    
+    }
+    .content .par{
+        width: 90%;
+        font-size: 2vw;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .content .cn{
+        width: 13%;
+        height: 7vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+        
+    }
+    .content a{
+        font-size: 2.6vw
+        
+    }
+}
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .main{
+        width: 100%;
+       background-color: rgba(0,0,0,0,4);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .logo{
+        margin-left: 240px;
+        width: 150%;
+        margin-top: -80px;
+        font-size: 5vw;
+    }
+   .content{
+    margin-top: 100px;
+    width: 80%;   
+    margin-left: 40px;  
+}
+.content h1{
+font-size: 40px;
+font-weight: bold;
+}
+ .content span{
+    font-size: 1vw; 
+}
+.content .par{
+    width: 40%;
+    font-size: 3vw;
+}
+.content .cn{
+    width: 20%;
+    height: 7vw;
+    font-size: 2vw;
+}
+.content a{
+    font-size: 2.5vw
+}
+
+.menu{
+    width: 100%;
+    
+
+}
+ul{
+    margin-top: -100px;
+    margin-left: 4px;
+}
+ul li{
+    margin-left: 40px;
+}
+ul li a{
+   font-size: 3.5vw; 
+}
+
+}
+@media screen and (max-width: 600px){
+.menu{
+    width: 100%;
+}
+.content{
+    margin-top: 80px;
+    margin-left: 5px;
+}
+.logo{
+    margin-left: 180px;
+    font-size: 5vw;
+}
+ul{
+    margin-top: -25px;
+    margin-left: -5px;
+}
+ul li {
+    margin-left: 50px;
+   
+}
+ul li a{
+    font-size: 3vw;
+}   
+}
+
+@media screen and (max-width: 450px){
+
+    .logo{
+        margin-left: 140px;
+        font-size: 4vw;
+    }
+ul{
+    margin-top: -25px;
+}
+ul li {
+    margin-left: 42px;
+}
+ul li a{
+    font-size: 5vw;
+}  
+.content .par{
+    width: 90%;
+    font-size: 1.8vw;
+}
+.content .cn{
+    width: 15%;
+    height: 4.5vw;
+    font-size: 3vw;
+}
+.content a{
+    font-size: 2vw
+}
+
+}
+
+@media (min-aspect-ratio:16/9) {
+   .background-clip{
+    width: 100%;
+    height: auto;
+   } 
+}
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+     width: auto;
+     height: 100%;
+    } 
+ }

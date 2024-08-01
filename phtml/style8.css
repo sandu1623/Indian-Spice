@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+  background-color: white;
+}
+
+
+h1{
+    text-align: center;
+    color: orangered;
+    padding: 20px;
+
+}
+nav{
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style: none;
+   
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: o.2s ease-in-out;
+    font-size: 30px;
+    background-color: white;
+    font-weight: bold;
+ 
+}
+nav ul a:hover{
+    background-color: orangered;
+    text-decoration: none;
+
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap:30px ;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item h3{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    
+    background-color: orangered;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+    text-decoration: none;
+    font-weight: bold;
+    
+   
+}
+.item button a{
+    background-color:orangered;
+}
+.item button:hover{
+    transform: scale(1.08);
+   
+}
+@media screen and (max-width:1000px) {
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media screen and (max-width:768pxpx) {
+    .item{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
